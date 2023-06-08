@@ -15,4 +15,5 @@ public interface MessageType {
     String message_client_exit = "6"; // logout
     String message_group_message = "7"; // group message
     String message_file_message = "8"; // file message
+    String message_check_offline_message = "9"; // check offline message
 }

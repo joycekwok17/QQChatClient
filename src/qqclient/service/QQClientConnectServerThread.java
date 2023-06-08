@@ -43,9 +43,9 @@ public class QQClientConnectServerThread extends Thread{
                     }
                     case MessageType.message_comm_mes ->
                         // display the message
-                            System.out.println("Received a message from " + message.getSender() + ": " + message.getContent());
+                        System.out.println("Received a message from " + message.getSender() + ": " + message.getContent());
                     case MessageType.message_group_message ->
-                            System.out.println("Received a group message from " + message.getSender() + ": " + message.getContent());
+                        System.out.println("Received a group message from " + message.getSender() + ": " + message.getContent());
                     case MessageType.message_file_message -> {
                         System.out.println("Received a file message from " + message.getSender());
                         // display the file message

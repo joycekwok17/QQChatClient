@@ -41,7 +41,6 @@ public class UserClientService {
 
                 // add the thread to the thread manager
                 ManagerClientConnectServerThread.addClientConnectServerThread(username, ccst);
-
                 isValid = true;
             }
             else {
@@ -71,6 +70,17 @@ public class UserClientService {
         }
     }
 
+//    public void checkOfflineMessage(String username) {
+//        Message message = new Message();
+//        message.setMessageType(MessageType.message_check_offline_message);
+//        message.setSender(username);
+//        try{
+//            ObjectOutputStream oos = new ObjectOutputStream(ManagerClientConnectServerThread.getClientConnectServerThread(username).getSocket().getOutputStream());
+//            oos.writeObject(message);
+//        }catch (IOException e){
+//            e.printStackTrace();
+//        }
+//    }
     public void logout(){
         Message message = new Message();
         message.setMessageType(MessageType.message_client_exit);
